@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+body {
+    font-family: 'Roboto', Arial;
+}
+
+
+nav.navbar {
+    z-index: 15;
+}
+
+
+nav .navbar-toggler i {
+    color: white;
+    border: none;
+}
+
+
+/* logo */
+
+nav.navbar .navbar-brand img {
+    width: 90%;
+}
+
+
+
+
+
+
+
+nav.navbar .navbar-nav .nav-item a.nav-link {
+    font-size: 17px;
+    font-weight: 500;
+    color: #d6ad79;
+    line-height: 40px;
+    padding: 0 16px;
+    transition: all 0.5s ease;
+    border: none;
+    margin: 5px;
+}
+
+
+
+nav.navbar .navbar-nav .nav-item a.nav-link:hover,
+nav.navbar .navbar-nav .nav-item a.nav-link.active {
+    background-color: #ee1737;
+    color: #e8e8e8;
+}
+
+
+
+
+
+nav.navbar.notransparrent {
+    background-color: white;
+    border: 1px solid #eee;
+}
+
+
+
+nav.navbar.notransparrent .nav-item a.nav-link {
+    color: #d6ad79;
+}
+
+
+
+
+
+nav.navbar.notransparrent .navbar-nav .nav-item a.nav-link:hover,
+nav.navbar.notransparrent .navbar-nav .nav-item a.nav-link.active {
+    color: white;
+    background-color: #ee1737;
+}
+
+
+
+nav.navbar.notransparrent button.navbar-toggler {
+    color: #d6ad79;
+}
+
+
+
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url(/IMGS/BG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: auto;
+}
+
+
+
+
+
+header .cer1 {
+    position: absolute;
+    top: 53.3%;
+    left: 77%;
+    z-index: 10;
+    mix-blend-mode: soft-light;
+}
+
+
+header .cer2 {
+    position:relative;
+    margin-top: 15cm;
+    left: 88.2%;
+    z-index: 10;
+    mix-blend-mode: lighten c;
+}
+
+
+
+
+header h1 {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    left: 15%;
+    text-align: center;
+    z-index: 10;
+    font-size: 110pt;
+    color: #d6ad79;
+    font-family: Arial;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+
+header h1:hover {
+    color: #ee1737;
+}
+
+
+
+
+header p {
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    left: 15%;
+    text-align: center;
+    z-index: 10;
+    font-size: 30pt;
+    color: #ee1737;
+    font-family: Roboto;
+    font-weight: 300;
+    letter-spacing: 10px;
+    transition: all 0.5s ease;
+}
+
+header p:hover {
+    color: #d6ad79;
+}
+
+
+
+
+
+
+/* Slideshow */
+
+
+
+section.Slideshow .overlay .carousel .carousel-inner .carousel-item {
+    transition: 0.7s ease-in-out;
+    
+}
+
+
+
+
+
+
+section.Slideshow .overlay .carousel .fa-solid {
+    width: 100%;
+    font-size: 35px;
+}
+
+
+
+
+section.Slideshow .overlay .carousel .carousel-inner h5 {
+    color: #d6ad79;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}  
+
+
+
+section.Slideshow .overlay .carousel .carousel-inner p {
+    color: #d6ad79;
+    text-align: center;
+}  
+
+
+
+
+
+
+/* Products Section */
+
+
+section.Products {
+    padding: 80px 0;
+    background-image: url(/IMGS/pattern-products-sec.png);width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: auto;
+}
+
+
+
+section.Products .container h3 {
+    text-align: center;
+    color: #bababa;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+section.Products .Products-title h3 {
+    font-size: 40px;
+    margin-bottom: 100px;
+    color: #d6ad79;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: bold;
+    
+}
+
+
+
+
+section.Products .card {
+    height: 330px;
+    padding: 50px;
+    margin: 20px;
+    transition: all 1s ease-in-out;
+}
+
+
+
+
+
+
+section.Products .card:hover {
+    height: 450px;
+}
+
+
+
+
+
+section.Products .card .card-img {
+    margin-bottom: 45px;
+}
+
+
+
+section.Products .card .card-block h4 {
+    font-size: 20px;
+    color: #d6ad79;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+section.Products .card .card-block p {
+    font-size: 15px;
+    line-height: 21px;
+    color: #919191;
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+
+
+section.Products .card:hover .card-block p{
+    opacity: 1;
+}
+
+
+
+
+section.Products .card .card-block a {
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 40px;
+    padding: 5px 5px;
+    text-decoration: none;
+    background-color: #dcdcdc;
+    border: none;
+    color: #888888;
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+
+
+section.Products .card:hover .card-block a {
+    opacity: 1;
+}
+
+
+
+section.Products .card .card-block a:hover {
+    background-color: #d6ad79;
+    color: #ffffff;
+}
+
+
+/* Other-Products Section */
+
+section.Other-Products {
+    background-color: #fbfbfb;
+    position: relative;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    padding-top: 350px;
+}
+
+
+
+section.Other-Products H1 {
+    text-align: center;
+    margin-top: -200px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    color: #d6ad79;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+
+
+
+section.Other-Products h3 {
+    text-align: center;
+    color: #bababa;
+}
+
+
+
+section.Other-Products .card {
+    height: 330px;
+    padding: 50px;
+    margin: 20px;
+    transition: all 1s ease-in-out;
+}
+
+
+
+section.Other-Products .card:hover {
+    height: 400px;
+}
+
+
+
+section.Other-Products .card .card-img {
+    margin-bottom: 45px;
+    
+}
+
+
+
+
+
+section.Other-Products .card .card-block h4 {
+    font-size: 20px;
+    color: #d6ad79;
+    margin-bottom: 25px;
+}
+
+
+
+section.Other-Products .card .card-block p {
+    font-size: 15px;
+    line-height: 21px;
+    color: #919191;
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+
+
+
+
+section.Other-Products .card:hover .card-block p{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* Jobs Section */
+
+
+section.jobs .jobs-form {
+    width: 60%;
+    margin: auto;
+}
+
+
+
+
+
+section.jobs h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    color: #d6ad79;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+
+
+section.jobs .jobs-form input {
+    margin-top: 7px;
+}
+
+
+
+section.jobs .jobs-form textarea {
+    margin-top: 7px;
+}
+
+
+section.jobs .jobs-text h3 {
+    margin-left: 275px;
+    font-size: 25px;
+    color: #d6ad79;
+    font-family: Roboto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+section.jobs .jobs-text h5 {
+    margin-left: 275px;
+    font-size: 20px;
+    color: #ee1737;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+
+
+
+section.jobs .jobs-form input,
+section.jobs .jobs-form textarea {
+    border-radius: 0;
+    background-color: #f7f7f7;
+    border: solid #ececec;
+    color: #5c5c5c;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+
+
+section.jobs .jobs-form button {
+    background-color: #ee1737;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 3px;
+    border: 0;
+    border-radius: 0;
+    width: auto;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+
+
+
+section.jobs .jobs-form button:hover {
+    background-color: #d6ad79;
+}
+
+
+
+/* Contacts Section */
+
+section.Contacts {
+    padding: 100px 0 60px;
+    background-color: #f7f7f7;
+    margin-top: 100px;
+}
+
+
+
+section.Contacts .map iframe {
+    height: 200px;
+    width: 90%;
+}
+
+
+section.Contacts .Contact-addresses h4 {
+    font-size: 50px;
+    color: #d6ad79;
+    margin-bottom: 40px;
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+section.Contacts .Contact-addresses ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+section.Contacts .Contact-addresses ul li {
+    font-size: 18px;
+    line-height: 25px;
+    color: #ee1737;
+    margin-bottom: 15px;
+}
+
+
+
+
+section.Contacts .Contact-addresses li address {
+    display:inline;
+}
+
+
+
+section.Contacts .contact-text {
+    margin: 150px auto 20px;
+}
+
+
+
+section.Contacts .contact-text h3 {
+    font-size: 24px;
+    color: #d6ad79;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+
+
+section.Contacts .contact-form {
+    width: 60%;
+    margin: auto;
+}
+
+
+section.Contacts .contact-form input,
+section.Contacts .contact-form textarea {
+    border-radius: 0;
+    background-color: #ffffff;
+    border: solid #ececec;
+    color: #5c5c5c;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+
+
+
+section.Contacts .contact-form button {
+    background-color: #ee1737;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 3px;
+    border: 0;
+    border-radius: 0;
+    width: auto;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+section.Contacts .contact-form button:hover {
+    background-color: #d6ad79;
+}
+
+
+
+/* footer Section */
+
+footer.footer .top-footer {
+    padding: 75px;
+    background-color: #171717;
+}
+
+
+
+
+
+footer.footer .top-footer h5 {
+    font-size: 18px;
+    line-height: 45px;
+    color: #d6ad79;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+
+footer.footer .top-footer h5::after {
+    content:"";
+    position: absolute;
+    right: 600px;
+    bottom: -10px;
+    width: 35px;
+    height: 3px;
+    background-color: #919191;
+    
+}
+
+
+
+
+
+footer.footer .top-footer .about-us p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #919191;
+    margin-bottom: 60px;
+    font-family: Roboto;
+}
+
+
+
+
+footer.footer .top-footer .about-us ul a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #212121;
+    color: #d6ad79;
+    display: block;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+footer.footer .top-footer .about-us ul a:hover {
+    background-color: #d6ad79;
+    color: #fff;
+}
+
+
+
+
+footer.footer .top-footer ul.contact-list {
+    list-style: none;
+}
+
+
+
+
+footer.footer .top-footer ul.contact-list li {
+    font-size: 18px;
+    color: #d6ad79;
+    margin-bottom: 35px;
+}
+
+
+
+footer.footer .top-footer ul.contact-list li i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #282828;
+    color: #acacac;
+    border-radius: 2px;
+    margin-right: 15px;
+}
+
+
+footer.footer .copyright {
+    background-color: #111;
+    padding: 30px 0;
+}
+
+
+
+footer.footer .copyright img {
+    margin-top: 5px;
+    margin-left: 910px;
+    margin-bottom: 13px;
+}
+
+
+footer.footer .copyright p {
+    font-size: 13px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 500;
+}
